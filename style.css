@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: red;
+    --secondary-color: green;
+
+    --default-bg: linear-gradient(180deg, hsla(274, 100%, 18%, 1) 0%, hsla(274, 100%, 7%, 1) 100%);
+
+
+    --nvidia-color: green;
+    /* --nvidia-bg: linear-gradient(180deg, hsla(158, 76%, 20%, 1) 0%, hsla(159, 78%, 7%, 1) 100%); */
+    --nvidia-bg: linear-gradient(180deg, hsla(158, 76%, 16%, 1) 0%, hsla(159, 78%, 7%, 1) 100%);
+    --nvidia-card-color: #0A4A33;
+    --nvidia-card-color-hover: #0C5A3E;
+
+    --amd-color: red;
+    /* --amd-bg:
+    --amd-card-color:
+    --amd-card-color-hover: */
+
+    --intel-color: skyblue;
+    --intel-bg: linear-gradient(0deg, hsla(204, 100%, 5%, 1) 0%, hsla(204, 100%, 21%, 1) 100%);
+    /* --intel-card-color:
+    --intel-card-color-hover: */
+
+    --text-color: #eee;
+}
+
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Inconsolata', serif;
+
+    /* background-color: #f0f0f0; */
+    line-height: 1.5;
+    font-size: 1.4rem;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+    justify-content: center;
+
+    min-height: 100vh;
+    background: hsla(204, 100%, 5%, 1);
+
+    
+}
+
+#header {
+    /* background-color: rgb(225, 227, 62); */
+    /* background-color: #525252; */
+    /* border: 2px red dotted; */
+
+    padding: 0.4rem;
+    /* margin-bottom: 2rem; */
+    /* align-items: end; */
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #eee;
+    text-decoration: none;
+    font-family: 'Atomic Age', serif;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+.contact-btn {
+    background: var(--primary-color);
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgb(1, 104, 1);
+}
+
+/* .nav a {
+    
+    background-color: #aaa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 6px;
+} */
+
+#main {
+    /* background-color: #fffdedff;
+    background-color: #00083F; */
+    /* flex-grow: 2; */
+    
+    text-align: center;
+
+    /* padding: 2rem 0; */
+
+    
+    /* max-width: 1200px; */
+
+    /* major problem 3 hours broooooooo*/
+    /* margin: 0 auto; */
+
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    
+}
+
+
+/* ivory: #fffdedff; */
+
+
+
+
+/* index buttons */
+.btn-nvidia, .btn-amd, .btn-intel {
+    border-radius: 3px;
+}
+
+.btn-nvidia {
+    background-color: green;
+}
+
+.btn-amd {
+    background-color: rgb(139, 0, 0);
+}
+
+.btn-intel {
+    background-color: rgb(0, 102, 192);
+}
+
+
+
+
+/* .index-section {
+    max-width: 90%;
+    margin: 0 auto;
+} */
+
+/* page layout */
+
+.about-topic {
+    color: #eee;
+    padding: 2rem 0.6rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    /* background-color: #002945; */
+    color: #eee;
+    transition: 0.2s;
+    padding: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid #bbbbbb;
+    border-radius: 6px;
+    box-shadow: 4px 4px 10px 0px #eeeeeeaf;
+}
+
+.grid-item p {
+    flex-grow: 2;
+}
+
+/* .grid-item:hover {
+    background-color: #003A61;
+} */
+
+.nvidia-card {
+    background: var(--nvidia-card-color);
+}
+
+.nvidia-card:hover {
+    background: var(--nvidia-card-color-hover);
+}
+
+.modal {
+    padding: 1em;
+    max-width: 1000px;
+
+    font-size: 2rem;
+
+    margin: auto;
+    border-radius: 6px;
+    /* border: 2px dotted rgb(184, 0, 0); */
+    background-color: #000000;
+    color: #eee;
+
+    scrollbar-color: rgb(0, 147, 0) rgb(0, 0, 0);
+}
+
+/* Hide scrollbar but keep functionality [DO ON MOBILE] */
+
+/* .modal::-webkit-scrollbar {
+    display: none;
+} */
+
+.xbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background: 0;
+    border: 0;
+    padding: 0;
+
+    /* margin-right: 0.4rem; */
+    translate: 0 -23%;
+    font-size: 5rem;
+
+    transition: 0.2s;
+    color: #eee;
+}
+
+.xbtn:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.btn {
+    padding: 0.2rem 1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-close-modal:hover {
+    background-color: red;
+}
+
+.btn-open-modal:hover {
+    background-color: greenyellow;
+}
+
+dialog::backdrop {
+    background-color: rgba(12, 12, 12, 0.5);
+    
+}
+
+dialog[open] {
+    animation: fadein 0.2s ease-in forwards;
+}
+
+@keyframes fadein{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    
+    /* background-color: #ffb17aff;
+    background-color: #252525; */
+    /* border: 2px red dotted; */
+    text-align: center;
+    color: #eee;
+}
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+/* @media (max-width: 600px) {
+    .nav-container {
+        
+    }
+
+    .nav-links {
+        display: none;
+    }
+} */
+
+.index-body {
+    /* background: #fffdedff; */
+    background: var(--default-bg);
+}
+
+.nvidia-page-body {
+    background: var(--nvidia-bg);
+}
