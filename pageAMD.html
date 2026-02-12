@@ -3,9 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Atomic+Age">
 </head>
-<body>
-    <a href="./index.html">Home</a>
+<body class="amd-page-body">
+    <header id="header">
+        <nav>
+            <ul class="nav-links">
+                <li class="logo"><a href="./index.html">Project</a></li>
+                <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="pageNvidia.html">Nvidia</a></li>
+                <li class="hideOnMobile"><a href="pageAMD.html"><strong>AMD</strong></a></li>
+                <li class="hideOnMobile"><a href="pageIntel.html">Intel</a></li>
+                <li class="hideOnMobile"><a href="./news.html">News</a></li>
+                <li class="hamburger-icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></a></li>
+            </ul>
+        </nav> 
+
+        <nav>
+            <ul class="nav-links sidebar">
+                <li class="close-icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="pageNvidia.html">Nvidia</a></li>
+                <li><a href="pageAMD.html"><strong>AMD</strong></a></li>
+                <li><a href="pageIntel.html">Intel</a></li>
+                <li><a href="./news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main">
+        <section class="about-topic">
+            <h1>AMD</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum iusto corporis voluptatum quis mollitia est ea earum, officiis odio nisi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt animi repellendus ea facilis culpa id atque expedita aliquid iusto. Doloremque neque nam id quas nesciunt, cum facilis minima, voluptatem iusto rem nulla repellat ab esse omnis. Illum enim error veritatis placeat? Veritatis consequuntur temporibus, tenetur corrupti incidunt hic sed ad.</p>
+        </section>
+        <div class="grid-container">
+
+            <article class="grid-item amd-card">
+                <h1>Thing 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum, vero voluptas cupiditate, minus quasi inventore ad aspernatur sint cumque, labore ducimus culpa nostrum neque! Facilis earum dolores voluptates architecto, ipsa ut, deleniti distinctio quae veritatis quis possimus ducimus aliquam.</p>
+
+                <button class="btn btn-open-modal open-btn">Learn more</button>
+
+                <dialog class="modal">
+                    <button class="xbtn close-btn">&times;</button>
+
+                    <h2>Hello</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere inventore exercitationem aspernatur soluta fugiat architecto harum debitis. Voluptate, ab?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, obcaecati!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cumque laborum animi quaerat optio eveniet dignissimos dolores non. Veritatis expedita sit provident laudantium quam harum iste ipsum nulla id, non doloribus quasi numquam! Soluta rerum tempore ut unde voluptates incidunt similique exercitationem dignissimos in porro, culpa nemo doloremque eius minima iure voluptatum qui saepe illum enim? Asperiores consequatur odio optio vero illo omnis et rem molestiae eum nulla nobis quam, dolores soluta maxime nihil nostrum tempora vel commodi earum, error exercitationem non, ipsa expedita quidem! Vel pariatur exercitationem laboriosam? Nihil nesciunt eaque iste, repellat cum quis deserunt accusamus architecto tempora.</p>
+                    
+                    <button class="btn btn-close-modal close-btn">Close</button>
+                </dialog>
+            </article>
+
+            <article class="grid-item amd-card">
+                <h1>Thing 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum, vero voluptas cupiditate, minus quasi inventore ad aspernatur sint cumque, labore ducimus culpa nostrum neque! Facilis earum dolores voluptates architecto, ipsa ut, deleniti distinctio quae veritatis quis possimus ducimus aliquam.</p>
+
+                <button class="btn btn-open-modal open-btn">Learn more</button>
+
+                <dialog class="modal">
+                    <button class="xbtn close-btn">&times;</button>
+
+                    <h2>Hello</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere inventore exercitationem aspernatur soluta fugiat architecto harum debitis. Voluptate, ab?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, obcaecati!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cumque laborum animi quaerat optio eveniet dignissimos dolores non. Veritatis expedita sit provident laudantium quam harum iste ipsum nulla id, non doloribus quasi numquam! Soluta rerum tempore ut unde voluptates incidunt similique exercitationem dignissimos in porro, culpa nemo doloremque eius minima iure voluptatum qui saepe illum enim? Asperiores consequatur odio optio vero illo omnis et rem molestiae eum nulla nobis quam, dolores soluta maxime nihil nostrum tempora vel commodi earum, error exercitationem non, ipsa expedita quidem! Vel pariatur exercitationem laboriosam? Nihil nesciunt eaque iste, repellat cum quis deserunt accusamus architecto tempora.</p>
+                    
+                    <button class="btn btn-close-modal close-btn">Close</button>
+                </dialog>
+            </article>
+
+            <article class="grid-item amd-card">
+                <h1>Thing 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum, vero voluptas cupiditate, minus quasi inventore ad aspernatur sint cumque, labore ducimus culpa nostrum neque! Facilis earum dolores voluptates architecto, ipsa ut, deleniti distinctio quae veritatis quis possimus ducimus aliquam.</p>
+
+                <button class="btn btn-open-modal open-btn">Learn more</button>
+
+                <dialog class="modal">
+                    <button class="xbtn close-btn">&times;</button>
+
+                    <h2>Hello</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere inventore exercitationem aspernatur soluta fugiat architecto harum debitis. Voluptate, ab?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, obcaecati!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cumque laborum animi quaerat optio eveniet dignissimos dolores non. Veritatis expedita sit provident laudantium quam harum iste ipsum nulla id, non doloribus quasi numquam! Soluta rerum tempore ut unde voluptates incidunt similique exercitationem dignissimos in porro, culpa nemo doloremque eius minima iure voluptatum qui saepe illum enim? Asperiores consequatur odio optio vero illo omnis et rem molestiae eum nulla nobis quam, dolores soluta maxime nihil nostrum tempora vel commodi earum, error exercitationem non, ipsa expedita quidem! Vel pariatur exercitationem laboriosam? Nihil nesciunt eaque iste, repellat cum quis deserunt accusamus architecto tempora.</p>
+                    
+                    <button class="btn btn-close-modal close-btn">Close</button>
+                </dialog>
+            </article>
+
+            <article class="grid-item amd-card">
+                <h1>Thing 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum, vero voluptas cupiditate, minus quasi inventore ad aspernatur sint cumque, labore ducimus culpa nostrum neque! Facilis earum dolores voluptates architecto, ipsa ut, deleniti distinctio quae veritatis quis possimus ducimus aliquam.</p>
+
+                <button class="btn btn-open-modal open-btn">Learn more</button>
+
+                <dialog class="modal">
+                    <button class="xbtn close-btn">&times;</button>
+
+                    <h2>Hello</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere inventore exercitationem aspernatur soluta fugiat architecto harum debitis. Voluptate, ab?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, obcaecati!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cumque laborum animi quaerat optio eveniet dignissimos dolores non. Veritatis expedita sit provident laudantium quam harum iste ipsum nulla id, non doloribus quasi numquam! Soluta rerum tempore ut unde voluptates incidunt similique exercitationem dignissimos in porro, culpa nemo doloremque eius minima iure voluptatum qui saepe illum enim? Asperiores consequatur odio optio vero illo omnis et rem molestiae eum nulla nobis quam, dolores soluta maxime nihil nostrum tempora vel commodi earum, error exercitationem non, ipsa expedita quidem! Vel pariatur exercitationem laboriosam? Nihil nesciunt eaque iste, repellat cum quis deserunt accusamus architecto tempora.</p>
+                    
+                    <button class="btn btn-close-modal close-btn">Close</button>
+                </dialog>
+            </article>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2026</p>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
