@@ -18,11 +18,23 @@ The main section will include a brief description about what a GPU is and 3 butt
 The footer section will include a copyright notice and contact information.
 
 # Design Decisions
+
+## How I applied the 4 design principles
+- Contrast: 
+- Repetition: I used a gradient that starts with the main color at the top and fades to almost black at the bottom
+- Alignment: 
+- Proximity:
+
 ## Color scheme:
-Primary colors: red, green and blue
-Secondary colors: yellow or purple
-Background color: red, green and blue gradient
-Text color: white
+Primary colors: Dark Purple
+
+Secondary colors: Dark Red, Green and Blue
+
+Background color: Red, Green and Blue gradient
+
+Text color: #eee
+
+I chose the dark purple as the main color because ...
 
 I chose the red, green and blue colors because these are the colors that AMD, Nvidia, and Intel use as their primary colors. The colors will be a darker shade of red, green and blue to make the grey text readable.
 
@@ -60,12 +72,25 @@ The link text inside the navigation will be highlited in bold to indicate users 
 
 I chose this navigation layout because it is widely used and easy to understand and users can easly find what they need. 
 
-# Wireframes
+## Site Map
+```
+Website Structure:
+├── index.html (Home page)
+├── pageNvidia.html (Nvidia page)
+├── pageAMD.html (AMD information page)
+├── pageIntel.html (Intel information page)
+└── news.html (News related to GPUs)
+```
+
 ## Wireframe sketches
-### Desktop wireframe:
-![img]()
-### Mobile wireframe:
-![img]()
+### Desktop layout:
+![img](./images/website-sketches/index-sketch.png)
+![img](./images/website-sketches/main-layout-other-pages-sketch.png)
+![img](./images/website-sketches/modal-design-sketch.png)
+### Mobile layout:
+![img](./images/website-sketches/mobile-index-sketch.png)
+#### Mobile menu layout:
+![img](./images/website-sketches/mobile-menu-sketch.png)
 
 ## Wireframe annotations
 Header and navigation:
@@ -91,7 +116,9 @@ Version control: [Git and GitHub]
 
 Wireframing tool: [draw.io](https://draw.io/)
 
-Color selection tool: 
+Color selection tool: [Coolors](https://coolors.co/)
+
+Google fonts: []()
 
 Other tools: 
 
