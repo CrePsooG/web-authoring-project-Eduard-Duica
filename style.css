@@ -7,7 +7,10 @@
 :root {
     /* --primary-color: red;
     --secondary-color: green; */
+
     --default-bg: linear-gradient(180deg, hsla(274, 100%, 18%, 1) 0%, hsla(274, 100%, 7%, 1) 100%);
+    --default-card-color: #1F0037;
+    --default-card-color-hover: #2A0049;
 
     /* --nvidia-color: green; */
     --nvidia-bg: linear-gradient(180deg, hsla(158, 76%, 16%, 1) 0%, hsla(159, 78%, 7%, 1) 100%);
@@ -25,6 +28,7 @@
     --intel-card-color-hover: #003A61;
 
     --text-color: #eee;
+    --text-color-hover: #ffffff;
 }
 
 body {
@@ -74,7 +78,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ffffff;
+    color: var(--text-color-hover);
 }
 
 .nav-links li:first-child {
@@ -116,18 +120,22 @@ body {
 /* index buttons */
 .btn-nvidia, .btn-amd, .btn-intel {
     border-radius: 3px;
+    padding: 0.4rem 1rem !important;
 }
 
 .btn-nvidia {
-    background-color: green;
+    /* background-color: green; */
+    background-color: var(--nvidia-card-color);
 }
 
 .btn-amd {
-    background-color: rgb(139, 0, 0);
+    /* background-color: rgb(139, 0, 0); */
+    background-color: var(--amd-card-color);
 }
 
 .btn-intel {
-    background-color: rgb(0, 102, 192);
+    /* background-color: rgb(0, 102, 192); */
+    background-color: var(--intel-card-color);
 }
 
 /* Nvidia, AMD, and Intel page layout */
@@ -220,8 +228,50 @@ dialog[open] {
 }
 
 #footer {
-    text-align: center;
+    margin-top: 1rem;
+
     color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-btn {
+    
+    padding: 1px 10px;
+
+    font-family: 'Inconsolata', serif;
+    color: var(--text-color);
+    background: transparent;
+
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    
+    font-size: 1.2rem;
+    transition: 0.3s;
+
+}
+
+.contact-btn:hover {
+    color: var(--text-color-hover);
+    text-shadow: 1px 1px 2px white;
+    box-shadow: 1px 1px 2px var(--text-color-hover);
+    transform: translate(-1px, -1px)
+}
+
+.contact-modal {
+    max-width: 600px;
+}
+
+.contact-modal form textarea {
+   /* width: 100%; */
+   max-width: 530px;
+   min-width: 220px;
+}
+
+.contact-modal form input:last-child {
+    width: 40%;
 }
 
 .btn {
@@ -273,6 +323,19 @@ a {
 
 .intel-card:hover {
     background: var(--intel-card-color-hover);
+}
+
+/* News card color */
+.news-page-body {
+    background: var(--default-bg);
+}
+
+.news-card {
+    background: var(--default-card-color);
+}
+
+.news-card:hover {
+    background: var(--default-card-color-hover);
 }
 
 /* Responsive layout */
