@@ -11,7 +11,7 @@
     <header id="header">
         <nav>
             <ul class="nav-links">
-                <li class="logo"><a href="./index.html">Project</a></li>
+                <li class="logo"><a href="./index.html">GPU Gen Info</a></li>
                 <li class="hideOnMobile"><a href="./index.html">Home</a></li>
                 <li class="hideOnMobile"><a href="pageNvidia.html"><strong>Nvidia</strong></a></li>
                 <li class="hideOnMobile"><a href="pageAMD.html">AMD</a></li>
@@ -36,86 +36,559 @@
     <main id="main">
         <section class="about-topic">
             <h1>Nvidia</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum iusto corporis voluptatum quis mollitia est ea earum, officiis odio nisi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt animi repellendus ea facilis culpa id atque expedita aliquid iusto. Doloremque neque nam id quas nesciunt, cum facilis minima, voluptatem iusto rem nulla repellat ab esse omnis. Illum enim error veritatis placeat? Veritatis consequuntur temporibus, tenetur corrupti incidunt hic sed ad.</p>
+            <p>
+                Nvidia Corporation is an American technology company headquartered in Santa Clara, California. Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, it develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, video games, and mobile and automotive applications. Nvidia has been described as a Big Tech company.
+            </p>
+            <p>
+                Originally focused on GPUs for video gaming, Nvidia broadened their use into other markets, including artificial intelligence (AI), professional visualization, and supercomputing. The company's product lines include GeForce GPUs for gaming and creative workloads, and professional GPUs for edge computing, scientific research, and industrial applications. As of the first quarter of 2025, Nvidia held a 92% share of the discrete desktop and laptop GPU market
+            </p>
+            <p>
+                Nvidia ended support for older generations, meaning that they will no longer receive driver updates. GPU driver updates are important because they can fix bugs, improve compatibility, and enhance performance, especially for new games. 
+            </p>
+
+            <h2>Generation (microarchitecture) that still get support:</h2>
         </section>
+
         <div class="grid-container">
 
             <article class="grid-item nvidia-card">
-                <h1>Thing 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum, vero voluptas cupiditate, minus quasi inventore ad aspernatur sint cumque, labore ducimus culpa nostrum neque! Facilis earum dolores voluptates architecto, ipsa ut, deleniti distinctio quae veritatis quis possimus ducimus aliquam.</p>
+                <h1>Blackwell</h1>
+                <p>Blackwell is a graphics processing unit (GPU) microarchitecture developed by Nvidia as the successor to the Hopper and Ada Lovelace microarchitectures. It was officially announced at Nvidia's GTC 2024 keynote on March 18, 2024.</p>
 
                 <button class="btn btn-open-modal open-btn">Learn more</button>
 
                 <dialog class="modal">
                     <button class="xbtn close-btn">&times;</button>
 
-                    <h2>Hello</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere inventore exercitationem aspernatur soluta fugiat architecto harum debitis. Voluptate, ab?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, obcaecati!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cumque laborum animi quaerat optio eveniet dignissimos dolores non. Veritatis expedita sit provident laudantium quam harum iste ipsum nulla id, non doloribus quasi numquam! Soluta rerum tempore ut unde voluptates incidunt similique exercitationem dignissimos in porro, culpa nemo doloremque eius minima iure voluptatum qui saepe illum enim? Asperiores consequatur odio optio vero illo omnis et rem molestiae eum nulla nobis quam, dolores soluta maxime nihil nostrum tempora vel commodi earum, error exercitationem non, ipsa expedita quidem! Vel pariatur exercitationem laboriosam? Nihil nesciunt eaque iste, repellat cum quis deserunt accusamus architecto tempora.</p>
+                    <h2>Blackwell</h2>
+
+                    <img class="info-img" src="./images/generations-images/500px-AI助手能帮我超频？COMPUTEX_NV展区体验_(极客湾Geekerwan)_07.png" alt="A GB200 die with Blackwell processors">
+                    <p>By 极客湾Geekerwan, <a class="btn-link" href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>, <a class="btn-link" href="https://commons.wikimedia.org/w/index.php?curid=149199498">Link</a>
+                    </p>
                     
+                    <h3>About The Architecture</h3>
+                    <p>
+                        Blackwell is fabricated on the custom 4NP process node for datacenter products, and on the custom 4N process node for consumer products, from TSMC. 4NP is an enhancement of the 4N node used for the Hopper and Ada Lovelace architectures. The Nvidia-specific 4NP process likely adds metal layers to the standard TSMC N4P technology. The GB100 die contains 104 billion transistors, a 30% increase over the 80 billion transistors in the previous generation Hopper GH100 die. As Blackwell cannot reap the benefits that come with a major process node advancement, it must achieve power efficiency and performance gains through underlying architectural changes.
+                    </p>
+                    <p>
+                        The GB100 die is at the reticle limit of semiconductor fabrication. The reticle limit in semiconductor fabrication is the maximum size of features that lithography machines can etch into a silicon die. Previously, Nvidia had nearly hit TSMC's reticle limit with GH100's 814 mm2 die. In order to not be constrained by die size, Nvidia's B100 accelerator utilizes two GB100 dies in a single package, connected with a 10 TB/s link that Nvidia calls the NV-High Bandwidth Interface (NV-HBI). NV-HBI is based on the NVLink 7 protocol. Nvidia CEO Jensen Huang said in an interview with CNBC that Nvidia had spent around $10 billion in research and development for Blackwell's NV-HBI die interconnect. Veteran semiconductor engineer Jim Keller, who had worked on AMD's K7, K12 and Zen architectures, criticized this figure and claimed that the same outcome could be achieved for $1 billion through using Ultra Ethernet rather than the proprietary NVLink system. The two connected GB100 dies are able to act like a large monolithic piece of silicon with full cache coherency between both dies. The dual die package totals 208 billion transistors. Those two GB100 dies are placed on top of a silicon interposer produced using TSMC's CoWoS-L 2.5D packaging technique.
+                    </p>
+                    <p>
+                        On the consumer side, Blackwell's largest die, GB202, measures in at 750mm2 which is 20% larger than AD102, Ada Lovelace's largest die. GB202 contains a total of 24,576 CUDA cores, 28.5% more than the 18,432 CUDA cores in AD102. GB202 is the largest consumer die designed by Nvidia since the 754mm2 TU102 die in 2018, based on the Turing microarchitecture. The gap between GB202 and GB203 has also gotten much wider compared to previous generations. GB202 features more than double the number of CUDA cores than GB203 which was not the case with AD102 over AD103.
+                    </p>
+                    
+
+                    <table class="info-table">
+                        <caption>
+                            GPUs released this generation
+                        </caption>
+                        <tr>
+                            <th>Model Name</th>
+                            <th>Launch</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 5090</th>
+                            <th>Jan 30, 2025</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 5080</th>
+                            <th>Jan 30, 2025</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 5070 Ti</th>
+                            <th>Mar 5, 2025</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 5060 Ti</th>
+                            <th>April 16, 2025</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 5060 Ti</th>
+                            <th>April 16, 2025</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 5060</th>
+                            <th>May 19, 2025</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 5050</th>
+                            <th>July 1, 2025</th>
+                        </tr>
+                    </table>
+
+
+                    <h3>About RTX 50 series</h3>
+                    <ul class="info-list">
+                        <li>GeForce RTX 50 series desktop GPUs are the first consumer GPUs to utilize a PCIe 5.0 interface and GDDR7 video memory.</li>
+                        <li>Supported APIs: Direct3D 12.2, OpenGL 4.6, OpenCL 3.0, Vulkan 1.4 and CUDA 12.x</li>
+                        <li>Supported display connections: HDMI 2.1b, DisplayPort 2.1b</li>
+                        <li>9th gen NVENC (3×/2×/1×) / 6th gen NVDEC (2×/1×)</li>
+                        <li>NVIDIA DLSS 4 (Multi Frame Generation support)</li>
+                        <li>AI Management Processor (AMP)</li>
+                        <li>Reflex 2 optimized</li>
+                        <li>Tensor core 5th gen (INT4/FP4 capabilities and second-generation FP8 Transformer Engine)</li>
+                        <li>RT core 4th gen</li>
+                        <li>Shader processors, RT cores and tensor cores optimized for RTX Neural Shaders and new neural workloads</li>
+                        <li>Mega Geometry Technology optimized (Shader processors and RT cores)</li>
+                        <li>Shader Execution Reordering (SER) 2.0</li>
+                        <li>Linear Swept Spheres (LSS)</li>
+                    </ul>
+
+                    <a href="https://en.wikipedia.org/wiki/Blackwell_(microarchitecture)" class="btn-link" target="_blank" rel="noreferre"><strong>Learn More about Blackwell</strong></a>
+
                     <button class="btn btn-close-modal close-btn">Close</button>
                 </dialog>
             </article>
 
             <article class="grid-item nvidia-card">
-                <h1>Thing 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum, vero voluptas cupiditate, minus quasi inventore ad aspernatur sint cumque, labore ducimus culpa nostrum neque! Facilis earum dolores voluptates architecto, ipsa ut, deleniti distinctio quae veritatis quis possimus ducimus aliquam.</p>
+                <h1>Ada Lovelace</h1>
+                <p>Ada Lovelace, also referred to simply as Lovelace, is a graphics processing unit (GPU) microarchitecture developed by Nvidia as the successor to the Ampere architecture, officially announced on September 20, 2022.</p>
 
                 <button class="btn btn-open-modal open-btn">Learn more</button>
 
                 <dialog class="modal">
                     <button class="xbtn close-btn">&times;</button>
 
-                    <h2>Hello</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere inventore exercitationem aspernatur soluta fugiat architecto harum debitis. Voluptate, ab?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, obcaecati!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cumque laborum animi quaerat optio eveniet dignissimos dolores non. Veritatis expedita sit provident laudantium quam harum iste ipsum nulla id, non doloribus quasi numquam! Soluta rerum tempore ut unde voluptates incidunt similique exercitationem dignissimos in porro, culpa nemo doloremque eius minima iure voluptatum qui saepe illum enim? Asperiores consequatur odio optio vero illo omnis et rem molestiae eum nulla nobis quam, dolores soluta maxime nihil nostrum tempora vel commodi earum, error exercitationem non, ipsa expedita quidem! Vel pariatur exercitationem laboriosam? Nihil nesciunt eaque iste, repellat cum quis deserunt accusamus architecto tempora.</p>
+                    <h2>Ada Lovelace</h2>
                     
+                    <h3>Architectural details</h3>
+                    <p>Architectural improvements of the Ada Lovelace architecture include the following:</p>
+
+                    <ul class="info-list">
+                        <li>CUDA Compute Capability 8.9</li>
+                        <li>TSMC 4N process (custom designed for Nvidia) - not to be confused with TSMC's regular N4 node</li>
+                        <li>4th-generation Tensor Cores with FP8, FP16, bfloat16, TensorFloat-32 (TF32) and sparsity acceleration</li>
+                        <li>3rd-generation Ray Tracing Cores, plus concurrent ray tracing and shading and compute</li>
+                        <li>Shader Execution Reordering (SER)</li>
+                        <li>Nvidia video encoder/decoder (NVENC/NVDEC) with 8K 10-bit 60FPS AV1 fixed function hardware encoding</li>
+                        <li>No NVLink support</li> 
+                    </ul>
+                    
+
+                    <table class="info-table">
+                        <caption>
+                            GPUs released this generation
+                        </caption>
+                        <tr>
+                            <th>Model Name</th>
+                            <th>Launch</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4090</th>
+                            <th>Oct 12, 2022</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4080</th>
+                            <th>Nov 16, 2022</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4070 Ti</th>
+                            <th>Jan 5, 2023</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4070</th>
+                            <th>Apr 13, 2023</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4060 Ti (8GB)</th>
+                            <th>May 24, 2023</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4060</th>
+                            <th>Jun 29, 2023</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4060 Ti (16GB)</th>
+                            <th>Jul 18, 2023</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4070 Super</th>
+                            <th>Jan 17, 2024</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4070 Ti Super</th>
+                            <th>Jan 24, 2024</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 4080 Super</th>
+                            <th>Jan 31, 2024</th>
+                        </tr>
+                    </table>
+                    
+                    <h3>Abount RTX 40 series</h3>
+                    <ul class="info-list">
+                        <li>Supported APIs: Direct3D 12 Ultimate (12_2), OpenGL 4.6, OpenCL 3.0, Vulkan 1.3 and CUDA 8.9</li>
+                        <li>Supported display connections: HDMI 2.1, DisplayPort 1.4a</li>
+                        <li>Tensor core 4th gen</li>
+                        <li>RT core 3rd gen</li>
+                        <li>NVIDIA DLSS 3</li>
+                        <li>NVIDIA DLSS 3.5</li>
+                        <li>Shader Execution Reordering</li>
+                        <li>Dual NVENC with 8K 10-bit 60FPS AV1 fixed function hardware encoding</li>
+                        <li>Opacity Micro-Maps (OMM)</li>
+                        <li>Displacement Micro-Meshes (DMM)</li>
+                        <li>No NVLink support, Multi-GPU over PCIe 5.0</li>
+                    </ul>
+
+                    <a href="https://en.wikipedia.org/wiki/Ada_Lovelace_(microarchitecture)" class="btn-link" target="_blank" rel="noreferre"><strong>Learn More about Ada Lovelace</strong></a>
+
                     <button class="btn btn-close-modal close-btn">Close</button>
                 </dialog>
             </article>
 
             <article class="grid-item nvidia-card">
-                <h1>Thing 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum, vero voluptas cupiditate, minus quasi inventore ad aspernatur sint cumque, labore ducimus culpa nostrum neque! Facilis earum dolores voluptates architecto, ipsa ut, deleniti distinctio quae veritatis quis possimus ducimus aliquam.</p>
+                <h1>Ampere</h1>
+                <p>Ampere is the codename for a graphics processing unit (GPU) microarchitecture developed by Nvidia as the successor to both the Volta and Turing architectures. It was officially announced on May 14, 2020.</p>
 
                 <button class="btn btn-open-modal open-btn">Learn more</button>
 
                 <dialog class="modal">
                     <button class="xbtn close-btn">&times;</button>
 
-                    <h2>Hello</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere inventore exercitationem aspernatur soluta fugiat architecto harum debitis. Voluptate, ab?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, obcaecati!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cumque laborum animi quaerat optio eveniet dignissimos dolores non. Veritatis expedita sit provident laudantium quam harum iste ipsum nulla id, non doloribus quasi numquam! Soluta rerum tempore ut unde voluptates incidunt similique exercitationem dignissimos in porro, culpa nemo doloremque eius minima iure voluptatum qui saepe illum enim? Asperiores consequatur odio optio vero illo omnis et rem molestiae eum nulla nobis quam, dolores soluta maxime nihil nostrum tempora vel commodi earum, error exercitationem non, ipsa expedita quidem! Vel pariatur exercitationem laboriosam? Nihil nesciunt eaque iste, repellat cum quis deserunt accusamus architecto tempora.</p>
+                    <h2>Ampere</h2>
+
+                    <h3>Architectural details</h3>
+                    <p>Architectural improvements of the Ampere architecture include the following:</p>
+
+                    <ul class="info-list">
+                        <li>CUDA Compute Capability 8.0 for A100 and 8.6 for the GeForce 30 series</li>
+                        <li>TSMC's 7 nm FinFET process for A100</li>
+                        <li>Custom version of Samsung's 8 nm process (8N) for the GeForce 30 series</li>
+                        <li>Third-generation Tensor Cores with FP16, bfloat16, TensorFloat-32 (TF32) and FP64 support and sparsity acceleration. The individual Tensor cores have with 256 FP16 FMA operations per clock 4x processing power (GA100 only, 2x on GA10x) compared to previous Tensor Core generations; the Tensor Core Count is reduced to one per SM.</li>
+                        <li>Second-generation ray tracing cores; concurrent ray tracing, shading, and compute for the GeForce 30 series</li>
+                        <li>High Bandwidth Memory 2 (HBM2) on A100 40 GB and A100 80 GB</li>
+                        <li>GDDR6X memory for GeForce RTX 3090, RTX 3080 Ti, RTX 3080, RTX 3070 Ti</li>
+                        <li>Double FP32 cores per SM on GA10x GPUs</li>
+                        <li>NVLink 3.0 with a 50 Gbit/s per pair throughput</li>
+                        <li>PCI Express 4.0 with SR-IOV support (SR-IOV is reserved only for A100)</li>
+                        <li>Multi-instance GPU (MIG) virtualization and spatial GPU partitioning feature in A100 supporting up to seven instances</li>
+                        <li>PureVideo feature set K hardware video decoding with AV1 hardware decoding for the GeForce 30 series and feature set J for A100</li>
+                        <li>5 NVDEC for A100</li>
+                        <li>Adds new hardware-based 5-core JPEG decode (NVJPG) with YUV420, YUV422, YUV444, YUV400, RGBA. Should not be confused with Nvidia NVJPEG (GPU-accelerated library for JPEG encoding/decoding)</li>
+                    </ul>
+
+                    <table class="info-table">
+                        <caption>
+                            GPUs released this generation
+                        </caption>
+                        <tr>
+                            <th>Model Name</th>
+                            <th>Launch</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3080</th>
+                            <th>Sep 17, 2020</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3090</th>
+                            <th>Sep 24, 2020</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3070</th>
+                            <th>Oct 29, 2020</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3060 Ti</th>
+                            <th>Dec 2, 2020</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3060</th>
+                            <th>Feb 25, 2021</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3080 Ti</th>
+                            <th>Jun 3, 2021</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3070 Ti</th>
+                            <th>Jun 10, 2021</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3080 (12 GB)</th>
+                            <th>Jan 11, 2022</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3050</th>
+                            <th>Jan 27, 2022</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 3090 Ti</th>
+                            <th>Mar 29, 2022</th>
+                        </tr>
+                    </table>
+
+                    <h3>Abount RTX 30 series</h3>
+                    <ul class="info-list">
+                        <li>Supported APIs: Direct3D 12 Ultimate (12_2), OpenGL 4.6, OpenCL 3.0, Vulkan 1.3 and CUDA 8.6</li>
+                        <li>Supported display connections: HDMI 2.1, DisplayPort 1.4a</li>
+                        <li>NVENC 7th generation</li>
+                        <li>Tensor core 3rd gen</li>
+                        <li>RT Core 2nd gen</li>
+                        <li>RTX IO</li>
+                        <li>Improved NVDEC with AV1 decode</li>
+                        <li>NVIDIA DLSS 2.0</li>
+                    </ul>
                     
+                    <a href="https://en.wikipedia.org/wiki/Ampere_(microarchitecture)" class="btn-link" target="_blank" rel="noreferre"><strong>Learn More about Ampere</strong></a>
+
                     <button class="btn btn-close-modal close-btn">Close</button>
                 </dialog>
             </article>
 
             <article class="grid-item nvidia-card">
-                <h1>Thing 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum, vero voluptas cupiditate, minus quasi inventore ad aspernatur sint cumque, labore ducimus culpa nostrum neque! Facilis earum dolores voluptates architecto, ipsa ut, deleniti distinctio quae veritatis quis possimus ducimus aliquam.</p>
+                <h1>Turing</h1>
+                <p>Turing is the codename for a graphics processing unit (GPU) microarchitecture developed by Nvidia. The architecture was first introduced in August 2018 at SIGGRAPH 2018 in the workstation-oriented Quadro RTX cards, and one week later at Gamescom in consumer GeForce 20 series graphics cards.</p>
 
                 <button class="btn btn-open-modal open-btn">Learn more</button>
 
                 <dialog class="modal">
                     <button class="xbtn close-btn">&times;</button>
 
-                    <h2>Hello</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere inventore exercitationem aspernatur soluta fugiat architecto harum debitis. Voluptate, ab?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, obcaecati!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam cumque laborum animi quaerat optio eveniet dignissimos dolores non. Veritatis expedita sit provident laudantium quam harum iste ipsum nulla id, non doloribus quasi numquam! Soluta rerum tempore ut unde voluptates incidunt similique exercitationem dignissimos in porro, culpa nemo doloremque eius minima iure voluptatum qui saepe illum enim? Asperiores consequatur odio optio vero illo omnis et rem molestiae eum nulla nobis quam, dolores soluta maxime nihil nostrum tempora vel commodi earum, error exercitationem non, ipsa expedita quidem! Vel pariatur exercitationem laboriosam? Nihil nesciunt eaque iste, repellat cum quis deserunt accusamus architecto tempora.</p>
+                    <h2>Turing</h2>
+
+                    <img class="info-img" src="./images/generations-images/500px-Nvidia@12nm@Turing@TU104@GeForce_RTX_2080@S_TAIWAN_1841A1_PKYN44.000_TU104-400-A1_DSCx3.jpg" alt="Nvidia GeForce RTX 2080 (TU104 | Turing) (Package | Close-Up)">
+                    <p>By Fritzchens Fritz, <a class="btn-link" href="https://commons.wikimedia.org/w/index.php?curid=104363371">Link</a></p>
+
+                    <h3>Features in Turing:</h3>
+                    <ul class="info-list">
+                        <li>CUDA cores (SM, Streaming Multiprocessor)</li>
+                        <li>Compute Capability 7.5</li>
+                        <li>Traditional rasterized shaders and compute</li>
+                        <li>Concurrent execution of integer and floating point operations (inherited from Volta)</li>
+                        <li>Ray-tracing (RT) cores
+                            <ul class="info-list">
+                                <li>Bounding volume hierarchy acceleration</li>
+                                <li>Shadows, ambient occlusion, lighting, reflections</li>
+                            </ul>
+                        </li>
+                        <li>Tensor (AI) cores
+                            <ul class="info-list">
+                                <li>Artificial intelligence</li>
+                                <li>Large matrix operations</li>
+                                <li>Deep Learning Super Sampling (DLSS)</li>
+                            </ul>
+                        </li>
+                        <li>Nvidia Optical Flow Accelerator for video interpolation workloads</li>
+                        <li>Memory controller with GDDR6/HBM2 support</li>
+                        <li>DisplayPort 1.4a with Display Stream Compression (DSC) 1.2</li>
+                        <li>PureVideo Feature Set J hardware video decoding</li>
+                        <li>GPU Boost 4</li>
+                        <li>NVLink Bridge with VRAM stacking pooling memory from multiple cards</li>
+                        <li>VirtualLink VR</li>
+                        <li>NVENC hardware encoding</li>
+                        <li>The GDDR6 memory is produced by Samsung Electronics for the Quadro RTX series. The RTX 20 series initially launched with Micron memory chips, before switching to Samsung chips by November 2018.</li>
+                    </ul>
+
+                    <table class="info-table">
+                        <caption>
+                            GPUs released this generation
+                        </caption>
+                        <tr>
+                            <th>Model Name</th>
+                            <th>Launch</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 2080</th>
+                            <th>Sep 20, 2018</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 2080 Ti</th>
+                            <th>Sep 27, 2018</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 2070</th>
+                            <th>Oct 17, 2018</th>
+                        </tr>
+                        <tr>
+                            <th>Nvidia Titan RTX</th>
+                            <th>Dec 18, 2018</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 2060</th>
+                            <th>Jan 15, 2019</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 2060 Super</th>
+                            <th>Jul 9, 2019</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 2070 Super</th>
+                            <th>Jul 9, 2019</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 2080 Super</th>
+                            <th>Jul 23, 2019</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce RTX 2060 (12 GB)</th>
+                            <th>Dec 7, 2021</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce GTX 1660 Ti</th>
+                            <th>Feb 21, 2019</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce GTX 1660</th>
+                            <th>Mar 14, 2019</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce GTX 1650</th>
+                            <th>Apr 23, 2019</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce GTX 1650 Super</th>
+                            <th>Nov 22, 2019</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce GTX 1660 Super</th>
+                            <th>Oct 29, 2019</th>
+                        </tr>
+                        <tr>
+                            <th>GeForce GTX 1630</th>
+                            <th>Jun 28, 2022</th>
+                        </tr>
+                    </table>
+
+                    <h3>About RTX 20 series</h3>
+                    <ul class="info-list">
+                        <li>Supported APIs: Direct3D 12 Ultimate (12_2), OpenGL 4.6, OpenCL 3.0, Vulkan 1.3 and CUDA 7.5</li>
+                        <li>Unlike previous generations the RTX Non-Super (RTX 2070, RTX 2080, RTX 2080 Ti) Founders Edition cards no longer have reference clocks, but are "Factory-OC". However, RTX Supers (RTX 2060 Super, RTX 2070 Super, and RTX 2080 Super) Founders Edition are reference clocks.</li>
+                        <li>NVENC 6th generation (B-frame, etc.)</li>
+                    </ul>
+
+                    <h3>About GTX 16 series</h3>
+                    <ul class="info-list">
+                        <li>Supported APIs: Direct3D 12 (feature level 12_1), OpenGL 4.6, OpenCL 3.0, Vulkan 1.3 and CUDA 7.5</li>
+                        <li>NVENC 6th generation (B-frame, etc.)</li>
+                        <li>TU117 only supports Volta NVENC (5th generation)</li>
+                    </ul>
                     
+                    <a href="https://en.wikipedia.org/wiki/Turing_(microarchitecture)" class="btn-link" target="_blank" rel="noreferre"><strong>Learn More about Turing</strong></a>
+
                     <button class="btn btn-close-modal close-btn">Close</button>
                 </dialog>
             </article>
         </div>
+
+        <section class="about-topic">
+            <h1>Generation (microarchitecture) that stopped getting support:</h1>
+            <p>Nvidia has ended support for these generations because they are old and not up to today's standards</p>
+        </section>
+
+        <div class="grid-container">
+
+            <article class="grid-item nvidia-card">
+                <h1>Pascal</h1>
+                <p>Pascal is the codename for a GPU microarchitecture developed by Nvidia, as the successor to the Maxwell architecture. The architecture was first introduced in April 2016 with the release of the Tesla P100 (GP100) on April 5, 2016, and is primarily used in the GeForce 10 series.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Pascal_(microarchitecture)" class="btn" target="_blank" rel="noreferre">Learn more (external link)</a>
+            </article>
+            
+            <article class="grid-item nvidia-card">
+                <h1>Maxwell</h1>
+                <p>Maxwell is the codename for a GPU microarchitecture developed by Nvidia as the successor to the Kepler microarchitecture. The Maxwell architecture was introduced in later models of the GeForce 700 series and is also used in the GeForce 800M series, GeForce 900 series, and Quadro Mxxx series, as well as some Jetson products.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Maxwell_(microarchitecture)" class="btn" target="_blank" rel="noreferre">Learn more (external link)</a>
+            </article>
+
+            <article class="grid-item nvidia-card">
+                <h1>Kepler</h1>
+                <p>Kepler is the codename for a GPU microarchitecture developed by Nvidia, first introduced at retail in April 2012, as the successor to the Fermi microarchitecture. Kepler was Nvidia's first microarchitecture to focus on energy efficiency.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Kepler_(microarchitecture)" class="btn" target="_blank" rel="noreferre">Learn more (external link)</a>
+            </article>
+            
+            <article class="grid-item nvidia-card">
+                <h1>Fermi</h1>
+                <p>Fermi is the codename for a graphics processing unit (GPU) microarchitecture developed by Nvidia, released fermi architecture to retail in April 2010, as the successor to the Tesla microarchitecture. It was the primary microarchitecture used in the GeForce 400 series and 500 series.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Fermi_(microarchitecture)" class="btn" target="_blank" rel="noreferre">Learn more (external link)</a>
+            </article>
+            
+            <article class="grid-item nvidia-card">
+                <h1>Tesla</h1>
+                <p>Tesla is the codename for a GPU microarchitecture developed by Nvidia, and released in 2006, as the successor to Curie microarchitecture. As Nvidia's first microarchitecture to implement unified shaders, it was used with GeForce 8 series, GeForce 9 series, GeForce 100 series, GeForce 200 series, and GeForce 300 series of GPUs</p>
+
+                <a href="https://en.wikipedia.org/wiki/Tesla_(microarchitecture)" class="btn" target="_blank" rel="noreferre">Learn more (external link)</a>
+            </article>
+            
+            <article class="grid-item nvidia-card">
+                <h1>Curie</h1>
+                <p>Curie is the codename for a GPU microarchitecture developed by Nvidia, and released in 2004, as the successor to the Rankine microarchitecture. It was named with reference to the Polish physicist Marie Salomea Skłodowska-Curie and used with the GeForce 6 and 7 series.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Curie_(microarchitecture)" class="btn" target="_blank" rel="noreferre">Learn more (external link)</a>
+            </article>
+            
+            <article class="grid-item nvidia-card">
+                <h1>Rankine</h1>
+                <p>Rankine is the codename for a GPU microarchitecture developed by Nvidia, and released in 2003, as the successor to the Kelvin microarchitecture. It was named with reference to Macquorn Rankine and used with the GeForce FX series.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Rankine_(microarchitecture)" class="btn" target="_blank" rel="noreferre">Learn more (external link)</a>
+            </article>
+            
+            <article class="grid-item nvidia-card">
+                <h1>Kelvin</h1>
+                <p>Kelvin is the codename for a GPU microarchitecture developed by Nvidia, and released in 2001, as the successor to the Celsius microarchitecture. It was named with reference to William Thomson, 1st Baron Kelvin and used with the GeForce 3 and 4 series.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Kelvin_(microarchitecture)" class="btn" target="_blank" rel="noreferre">Learn more (external link)</a>
+            </article>
+            
+            <article class="grid-item nvidia-card">
+                <h1>Celsius</h1>
+                <p>Celsius is the codename for a GPU microarchitecture developed by Nvidia, and released in 1999 microarchitecture. It was named with reference to Anders Celsius and used with the GeForce 256 and GeForce 2 series.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Celsius_(microarchitecture)" class="btn" target="_blank" rel="noreferre">Learn more (external link)</a>
+            </article>
+        </div>
+
+        
     </main>
 
     <footer id="footer">
-        <p>&copy; 2026</p>
+        <p>&copy; 2026 Eduard Duica</p>
+        
+        <button class="btn open-btn">Contact</button>
+        <dialog class="modal contact-modal">
+            <button class="xbtn close-btn">&times;</button>
+
+            <h2>Contact</h2>
+            <p>Use the form below to contact me if you notice an error or out of date information on the website.</p>
+
+            <form action="mailto:20251554@dcfe.ie">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Mike">
+
+                <br>
+                
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Rafone">
+
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="mikerafone@mail.com">
+
+                <br>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                <br>
+
+                <input type="checkbox" id="uncheckbox" name="uncheckbox" checked>
+                <label for="">Uncheck this box if you want</label>
+
+                <br>
+
+                <input type="checkbox" id="checkbox" name="checkbox" required>
+                <label for="">Check this box</label>
+
+                <br>
+
+                <input type="submit" class="btn" >
+
+            </form>
+        </dialog>
     </footer>
     <script src="./script.js"></script>
 </body>

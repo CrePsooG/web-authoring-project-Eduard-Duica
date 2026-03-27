@@ -11,7 +11,7 @@
     <header id="header">
         <nav>
             <ul class="nav-links">
-                <li class="logo"><a href="./index.html">Project</a></li>
+                <li class="logo"><a href="./index.html">GPU Gen Info</a></li>
                 <li class="hideOnMobile"><a href="./index.html"><strong>Home</strong></a></li>
                 <li class="hideOnMobile"><a href="pageNvidia.html">Nvidia</a></li>
                 <li class="hideOnMobile"><a href="pageAMD.html">AMD</a></li>
@@ -35,8 +35,15 @@
     
     <main id="main">
         <section class="index-section about-topic">
-            <h1>Home</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nam placeat est. Reiciendis aperiam quis quod in tenetur, eum praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde amet dolores aut! Eligendi commodi asperiores nam nisi quasi placeat? Reiciendis nesciunt repellat voluptatum molestias nihil, aperiam placeat nulla voluptates doloremque ex harum labore, officia nisi odio iste eos quas obcaecati vitae possimus voluptatibus quasi molestiae! Vitae ratione dolorem nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias velit saepe reiciendis, aut fuga, tenetur obcaecati, veniam culpa aliquam distinctio officiis? Pariatur aut voluptatibus ad itaque esse officiis maiores fugit deserunt. Rerum adipisci impedit suscipit delectus sint sit nisi laborum culpa accusantium cupiditate nam magnam voluptatem corrupti, aperiam quisquam fuga.</p>
+            <h1>Welcome!</h1>
+            <p>On this website you will find information about desktop consumer GPUs, specifically gaming GPUs, that are still receive driver support.</p>
+
+            <h3>What is a GPU?</h3>
+            <p>A GPU, or Graphics Processing Unit, is a specialized electronic circuit designed to accelerate the creation and rendering of images and videos on computers and other devices. It performs complex mathematical calculations rapidly, making it essential for tasks like gaming, video editing, and increasingly, artificial intelligence applications.</p>
+
+            <h3>GPU options</h3>
+            <p>You have 3 options. There are other companies that design and manufacture GPUs but I won't talk about them, I will only focus on the following companies:</p>
+
         </section>
         <nav class="nav nav-index-section">
             <a href="pageNvidia.html" class="btn btn-nvidia">Nvidia</a>
@@ -46,7 +53,50 @@
     </main>
 
     <footer id="footer">
-        <p>&copy; 2026</p>
+        <p>&copy; 2026 Eduard Duica</p>
+        
+        <button class="btn open-btn">Contact</button>
+        <dialog class="modal contact-modal">
+            <button class="xbtn close-btn">&times;</button>
+
+            <h2>Contact</h2>
+            <p>Use the form below to contact me if you notice an error or out of date information on the website.</p>
+
+            <form action="mailto:20251554@dcfe.ie">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Mike">
+
+                <br>
+                
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Rafone">
+
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="mikerafone@mail.com">
+
+                <br>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                <br>
+
+                <input type="checkbox" id="uncheckbox" name="uncheckbox" checked>
+                <label for="">Uncheck this box if you want</label>
+
+                <br>
+
+                <input type="checkbox" id="checkbox" name="checkbox" required>
+                <label for="">Check this box</label>
+
+                <br>
+
+                <input type="submit" class="btn" >
+
+            </form>
+        </dialog>
     </footer>
     <script src="./script.js"></script>
 </body>
