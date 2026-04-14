@@ -26,8 +26,8 @@
     --intel-card-color-hover: #003A61;
 
     /* text color */
-    --text-color: #eee;
-    --text-color-hover: #ffffff;
+    --text-color: #d2c6db;
+    --text-color-hover: #f1e5fb;
 }
 
 body {
@@ -142,8 +142,27 @@ body {
 }
 
 /* Nvidia, AMD, and Intel page layout */
+.info-source {
+    color: var(--text-color);
+    padding: 2rem 0 0 0;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.link-source:link {
+    color: #c5a1e5;
+}
+
+.link-source:visited {
+    color: #a9a1b0;
+}
+
+.link-source:hover {
+    color: var(--text-color-hover);
+}
+
 .about-topic {
-    color: #eee;
+    color: var(--text-color);
     padding: 2rem 0.6rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -166,16 +185,16 @@ body {
 }
 
 .grid-item {
-    color: #eee;
+    color: var(--text-color);
     transition: 0.2s;
     padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #bbbbbb;
+    border: 1px solid var(--text-color);
     border-radius: 6px;
-    box-shadow: 4px 4px 10px 0px #eeeeee8d;
+    box-shadow: 4px 4px 10px 0px #888;
 }
 
 .grid-item p {
@@ -195,7 +214,7 @@ body {
     margin: auto;
     border-radius: 6px;
     background-color: hsla(0, 0%, 0%, 0.502);
-    color: #eee;
+    color: var(--text-color);
     /* scrollbar-color: rgb(0, 147, 0) rgb(0, 0, 0); */
 }
 
@@ -287,8 +306,7 @@ dialog[open] {
 /* footer design */
 #footer {
     margin-top: 4rem;
-
-    color: #eee;
+    color: var(--text-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -320,7 +338,7 @@ dialog[open] {
     color: var(--text-color);
     background: transparent;
     border-radius: 5px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--text-color);
     font-size: 1.2rem;
     transition: 0.3s;
 }
@@ -328,7 +346,7 @@ dialog[open] {
 .btn:hover {
     cursor: pointer;
     color: var(--text-color-hover);
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 1px 1px 2px #ccc;
     box-shadow: 1px 1px 2px var(--text-color-hover);
     transform: translate(-1px, -1px)
 }
@@ -344,7 +362,7 @@ dialog[open] {
 .btn-link:hover {
     cursor: pointer;
     color: var(--text-color-hover);
-    text-shadow: 1px 1px 2px white;
+    text-shadow: 1px 1px 2px #eee;
     transform: translate(-1px, -1px)
 }
 
@@ -415,7 +433,7 @@ a {
     }
 
     .sidebar a:hover {
-        color: #ffffff;
+        color: var(--text-color-hover);
         background-color: hsla(0, 0%, 0%, 0.5);
         transition: 0.2s;   
     }

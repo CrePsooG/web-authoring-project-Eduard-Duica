@@ -1,77 +1,9 @@
 # Portfolio Purpose and Audience
-The purpose of this portofolio is to share information about gaming GPUs. It should contain a breif history and specs of different GPU models from AMD, Nvidia, and Intel. It will also have a page with news.
+The purpose of this portofolio is to share information about gaming GPUs generations. It should contain a breif history of the company, key points about the specific generation and specs of different GPU models from AMD, Nvidia, and Intel. It will also have a page with news.
 
-The target audience are people all around the world that want to learn about GPUs. Having this in mind I will try and keep the design of the website simple because if you are looking to read you don't need fancy design that can distract you.
+The target audience are people all around the world that want to learn about GPUs generations. The design of the website is simple, easy to read with a few images and to navigate. 
 
-# Content Planning
-The landing page will include a brief description of what a GPU is
-
-Header section will include the name of the website with 5 links (this will be the main navigation that the website will use):
-- first link will link to the landing page
-- second link will link to the Nvidia page
-- third link will link to the AMD page
-- fourth link will link to the Intel Page
-- fifth link will link to the News page
-
-The main section will include a brief description about what a GPU is and 3 buttons that link to the other 3 pages
-
-The footer section will include a copyright notice and contact information.
-
-# Design Decisions
-
-## How I applied the 4 design principles
-- Contrast: 
-- Repetition: I used a gradient that starts with the main color at the top and fades to almost black at the bottom
-- Alignment: 
-- Proximity:
-
-## Color scheme:
-Primary colors: Dark Purple
-
-Secondary colors: Dark Red, Green and Blue
-
-Background color: Red, Green and Blue gradient
-
-Text color: #eee
-
-I chose the dark purple as the main color because ...
-
-I chose the red, green and blue colors because these are the colors that AMD, Nvidia, and Intel use as their primary colors. The colors will be a darker shade of red, green and blue to make the grey text readable.
-
-## Typography
-Heading font: 
-Body text font:
-Using web fonts from googleef
-I chose this font because it is easly readable.
-
-## Layout
-### Overall structure: 
-A simple layout with a header, main section and a footer.
-- The header will have the name of the website and 5 links.
-- The main section is the main content that be displayed on the page
-- The footer will have a copyright notice and contact information.
-
-### Content width:
-I will use max width to prevent the main section from stretching more that 1000px
-
-### Spacing:
-Will have padding in the main section and use line height to make the more readable.
-
-I chose this layout approach because it is simple. I didn't want the layout to distract the reader.
-
-# Navigation Structure
-The navigation will be located in the middle top of the page and contain 5 links: 
-
-1. Home → index.html
-2. Nvidia → nvidia.html 
-3. AMD → amd.html
-4. Intel → intel.html
-5. News → news.html
-
-The link text inside the navigation will be highlited in bold to indicate users on what page they are.
-
-I chose this navigation layout because it is widely used and easy to understand and users can easly find what they need. 
-
+# Site Structure
 ## Site Map
 ```
 Website Structure:
@@ -82,6 +14,57 @@ Website Structure:
 └── news.html (News related to GPUs)
 ```
 
+All pages share the same navigation structure and link to each other.
+
+## Navigation Structure
+The navigation will be located in the middle top of the page and contain 5 links: 
+
+1. Home -> index.html
+2. Nvidia -> nvidia.html 
+3. AMD -> amd.html
+4. Intel -> intel.html
+5. News -> news.html
+
+The link text inside the navigation will be highlited in bold to indicate users on what page they are.
+
+The logo of the website, when clicked will link to home page.
+
+I chose this navigation layout because it is widely used and easy to understand, users can easly find what they need. 
+
+# Color Scheme
+## Color scheme:
+Primary colors: Dark Purple (#1F0037) - I like it
+
+Secondary colors: 
+- Dark Red (#6D1425)
+- Dark Green (#0A4A33)
+- Dark Blue (#003356)
+
+Background color: Gradiend with the colors from above that fades to black. Each page has a different color
+
+Text color: Very light purple (#d2c6db)
+
+The dark red, green and blue are close to the colors that AMD, Nvidia and Intel use as their primary color. The main color dark purple, I chose it because it makes the text easier to read and gives a feeling appropriate for a information website.
+
+## Typography
+Logo: 'Atomic Age', serif
+Text font: 'Inconsolata' serif
+
+I'm using web fonts from google.
+
+I chose the text font Inconsolata because it is easly readable by users and Atomic Age for logo because it looks very different from the text font
+
+# Design Principles
+## How I plan to apply the 4 design principles
+- Contrast: Headings will be larger than text paragraphs. All cards on the page will have a backgrond shadow to make them stand out. Buttons will have a border to make them stand out 
+
+- Repetition: Same navigation bar on every page. All cards on the page have a heading, paragraph, and a button. Color scheme consistent throughout the page.
+
+- Alignment: All content will be center-aligned in a max-width container. Navigation items will be evenly spaced and right-aligned. The logo will be left-aligned.
+
+- Proximity: All info cards will be grouped in a box. Contents of each box will have clear spacing between items.
+
+# Page Layouts
 ## Wireframe sketches
 ### Desktop layout:
 ![img](./images/website-sketches/index-sketch.png)
@@ -107,43 +90,62 @@ Responsive considerations:
 - The main section will no longer be a box and the contents will stack verically
 - Footer contents will stack vertically
 
-# Technologies and Tools
+# Technical Planning
+## HTML Elements to use
+- Table: Inside each info card to display the model of the GPU and release date
+- Form: On every page at the bottom for users to submit feedback
+- Article: Is the info card that contains different elemets: heading, paragraph, button, and link, found on Nvidia, AMD and Intel page.
+- Semantic sections: Each page will have header (site logo + nav), main (content), sections (topic areas), articles (info cards), footer (copyright + form)
+- Images: Inside of some articles(cards) found at the top below the heading
+- Special characters: copyright symbol and times symbol (&times;) used for close button of each card
+
+## CSS properties to be implemented:
+I'll use Flexbox for:
+- Navigation bar: Horizontal flex row on pc and column on mobile with space-between
+- Each card : Vertical flex column with align items in the center and paragraph growing to push button to the bottom
+
+I'll use Grid for:
+- Cards layout: 3-column grid, becomes 2 columns on smaller screenns and 1 column on mobile
+- Body layout: to separate the header, main and footer
+
+Other CSS techniques:
+- Responsive: Media queries at 850px for tablet, 450px for mobile
+- Cards: border-radius, box-shadow for depth
+- Hover effects: Cards change color, box-shadow for buttons
+
+# Content Planning
+- Text: Write about every GPU generation (AMD, Nvidia, Intel)
+- Images: From the wikipedia page for each generation (free to use, no credit required but I will credit them)
+- Data: GPU release dates and key improvements each generation
+
+# Content Sources
+- Text, images, data from Wikipedia
+
+# Development Tools
 Text editor: [Visual Studio Code](https://code.visualstudio.com/)
 
 Browser for testing: Chrome, Edge, Firefox, Brave
 
-Version control: [Git and GitHub]
+Version control: Git + GitHub
 
 Wireframing tool: [draw.io](https://draw.io/)
 
 Color selection tool: [Coolors](https://coolors.co/)
 
-Google fonts: []()
-
-Other tools: 
-
 I chose these tools because they are widely used.
 
-#  HTML Elements to Use
-### **&lt;header&gt;**
-Purpose: [What does this element do?]
+# Evolution of HTML and CSS
+When HTML (HyperText Markup Language) was first released in 1993, it only had support for displaying text and links. 
+- In 1995, HTML 2 introduced support for images, forms and tables. 
+- In Jan. 1997, HTML 3 introduced support for CSS 1 (Cascading Style Sheets) and JavaScript. 
+- In Dec. 1997, HTML 4 incouraged the use of CSS and introduced new semantic elements
+- In 2014, HTML 5 introduced support for audio, video, SVGs and responsive web design with media queries, etc.. This is the version that is still updated and used in 2025
 
-How you’ll use it: [Specific use in your portfolio]
+Source: Wikipedia Contributors (2018). HTML. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/HTML.
 
-Why it’s appropriate: [Why is this the right semantic element for this purpose?]
-### **&lt;nav&gt;**
-### **&lt;main&gt;**
-### **&lt;footer&gt;**
+CSS (Cascading Style Sheets) is used to style HTML. 
+- In 1996, CSS 1 introduced support for font properties, color of elements, text attributes, alignment of elements, margins, borders and padding.
+- In 1998, CSS 2 added new capabilities such as absolute, relative, and fixed positioning of elements
+- Work on CSS 3 started around 1999 and is still evolving in 2025. CSS 3 was divided into serveral separate modules. Each module adding new capabilities such as Flexbox, CSS Grid, media queries, gradients, etc., or extending features from CSS 2 to preserve backward compatibility.
 
-
-# CSS properties to be implemented:
-### **Flexbox**
-### **Grid**
-### **color** property for text color
-### **padding** property for padding inside of the boxes
-
-
-# HTML and CSS Evolution
-Somenthing here
-
-# Implementation Plan
+Source: Wikipedia Contributors (2020). CSS. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/CSS.
