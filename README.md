@@ -1,4 +1,4 @@
-# [Project](https://crepsoog.github.io/web-authoring-project)
+# [Project](https://crepsoog.github.io/web-authoring-project-Eduard-Duica)
 
 ## Project Overview
 I built a website showcasing all GPU generations from AMD, Nvidia, and Intel. It includes five pages: a landing page, Nvidia page, AMD page, Intel page and News page. The site uses dark purple as the main color and dark red, green, and blue for the AMD, Nvidia, and Intel page insipired by the colors that these companies use as their primary colors. It is designed for people who want to learn about different GPU generations.
@@ -141,7 +141,7 @@ I chose this navigation layout because it is widely used and easy to understand,
 ## Viewing the Site
 ### Repository Structure
 ```
-WA-project/
+web-authoring-project-Eduard-Duica/
 ├── images/
     ├── generations-images/
         ├── 500px-AI助手能帮我超频？COMPUTEX_NV展区体验_(极客湾Geekerwan)_07.png
@@ -172,12 +172,12 @@ WA-project/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/CrePsooG/web-authoring-project.git
+   git clone https://github.com/CrePsooG/web-authoring-project-Eduard-Duica.git
    ```
 
 2. Navigate to the folder:
    ```bash
-   cd WA-project
+   cd web-authoring-project-Eduard-Duica
    ```
 
 3. Open in browser:
@@ -186,7 +186,7 @@ WA-project/
 
 ### Live Site
 
-**GitHub Pages URL:** https://crepsoog.github.io/web-authoring-project
+**GitHub Pages URL:** https://crepsoog.github.io/web-authoring-project-Eduard-Duica
 
 ## Development Process
 Started by creating HTML structure for all pages with navigation. Added CSS for layout and colors. Then added content page by page. Tested after each page. Finally refined styling and tested responsiveness.
