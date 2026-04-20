@@ -188,6 +188,9 @@ web-authoring-project-Eduard-Duica/
 
 **GitHub Pages URL:** https://crepsoog.github.io/web-authoring-project-Eduard-Duica
 
+**Repository URL:**  https://github.com/CrePsooG/web-authoring-project-Eduard-Duica
+
+
 ## Development Process
 Started by creating HTML structure for all pages with navigation. Added CSS for layout and colors. Then added content page by page. Tested after each page. Finally refined styling and tested responsiveness.
 
